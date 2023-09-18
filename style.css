@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+/* Font start*/
+
+@import url('https://fonts.googleapis.com/css2?family=Actor&family=Inter:wght@600&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,800;1,700&display=swap');
+
+/* Font End */
+#nav{
+    height: 145px;
+    width: 100%;
+
+    display: flex;
+    gap: 45px;
+    align-items: center;
+    justify-content: flex-start;
+    padding:0 150px ;
+    position: fixed;
+    z-index: 99;
+}
+
+#nav img{
+    height: 75px;
+}
+
+#nav h4{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+
+}
+#cursor{
+    width:25px;
+    height: 25px;
+    background:#95C11e ;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+
+}
+#cursorBlur{
+    width:400px;
+    height: 400px;
+    background:#96c11e4b ;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    filter: blur(60px);
+    
+
+}
+.back-video video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+
+}
+
+#main{
+   position: relative;
+    background-color: rgb(0,0,0,0.4);
+}
+
+#page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 10;
+}
+
+#page1 h1{
+    font-family: 900;
+    font-size: 140px;
+    position: relative;
+}
+#page1 h1::before{
+    content: "EAT. DRINK. PLAY.";
+    position: absolute;
+    color: #000000;
+    top:-6px;
+    left: -7px;
+    -webkit-text-stroke: 2px #95C11e;
+    z-index: -1;
+}
+#page1 h2{
+    font-family: 800;
+    font-size: 30px;
+    margin-top:10px;
+    margin-bottom: 20px;
+    z-index: 10;
+}
+#page1 p{
+    font-family: 700;
+    font-size: 22px;
+    width: 40%;
+}
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    z-index: 10;
+}
+
+#scroller{
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+}
+#scroller::-webkit-scrollbar{
+    display: none;
+}
+#scroller-1{
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 50s;
+    animation-timing-function:  linear;
+    animation-iteration-count: infinite;
+}
+
+#scroller h4{
+    display: inline-block;
+    font-size: 110px;
+    font-weight: 800;
+    margin-right: 10px;
+    -webkit-text-stroke: 2px  #95C11e;
+    color: transparent;
+    transition: all linear 1s;
+}
+#scroller h4:hover{
+    color: #95C11e;
+    font-size: 114px;
+
+}
+
+
+@keyframes  scroll {
+    from{
+        transform: translatex(0);
+    }to{
+        transform: translateX(-100%);
+    }
+    
+}
+
+#aboutus{
+   height: 40vh;
+   width: 100%;
+   display: flex;
+   padding: 0 80px; 
+   align-items: center;
+   justify-content: space-around;
+}
+
+#aboutus img{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+#about-in{
+    width: 50%;
+    text-align: center;
+}
+#about-in h3{
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+#about-in p{
+    font-size: 16px;
+    line-height: 25px;
+}
