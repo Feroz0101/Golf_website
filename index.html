@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GOLF Website</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -29,6 +32,9 @@
             <h2>WELCOME TO SIDCUP FAMILY GOLF!</h2>
             <p>Sidcup Family Golf is a multipurpose golf facility located in Sidcup, South East London. Passionate about
                 technology, player development and making golf fun and accessible to everyone. </p>
+                <div id="arrow">
+                    <i class="ri-arrow-down-line"></i>
+                </div>
         </div>
         <div id="page2">
             <div id="scroller">
@@ -56,19 +62,112 @@
                 <img src="./file/img-1.avif" alt="">
                 <div id="about-in">
                     <h3>ABOUT US</h3>
-                    <p>Home to a 46-bay, multi-tier, floodlit driving range, powered by Toptracer Range technology. Complimented by a practice green and bunker, coffee shop and American Golf Store. There truly is something for everyone as we also boast two outdoor 18-hole dinosaur themed crazy golf courses. </p>
+                    <p>Home to a 46-bay, multi-tier, floodlit driving range, powered by Toptracer Range technology.
+                        Complimented by a practice green and bunker, coffee shop and American Golf Store. There truly is
+                        something for everyone as we also boast two outdoor 18-hole dinosaur themed crazy golf courses.
+                    </p>
                 </div>
                 <img src="./file/img-2.avif" alt="" srcset="">
             </div>
+            <div id="cards-container">
+                <div class="card" id="card-1">
+                    <div class="overlay">
+                        <h4>TOPRACER RANGE </h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam nobis iusto consectetur
+                            nihil consequuntur quae inventore, asperiores neque repellendus rerum praesentium minima,
+                            repellat officiis itaque.</p>
+                    </div>
+                </div>
+                <div class="card" id="card-2">
+                    <div class="overlay">
+                        <h4>Adventure golf </h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam nobis iusto consectetur
+                            nihil consequuntur quae inventore, asperiores neque repellendus rerum praesentium minima,
+                            repellat officiis itaque.</p>
+                    </div>
+                </div>
+                <div class="card" id="card-3">
+
+                    <div class="overlay">
+                        <h4>golf Lessons</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam nobis iusto consectetur
+                            nihil consequuntur quae inventore, asperiores neque repellendus rerum praesentium minima,
+                            repellat officiis itaque.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="green-div">
+                <img id="img-1" src="./file/dots-side.svg" alt="" srcset="">
+                <h4>SIGN UP FOR SIDCUP NEWS AND SPECIAL OFFERS STRAIGHT TO YOUR INBOX </h4>
+                <img src="./file/dots-side.svg" alt="" srcset="">
+            </div>
         </div>
+        <div id="page3">
+            <img id="qoute1" src="./file/quote-left.svg" alt="" srcset="">
+            <p>Excellent couple of hours, relax and enjoy in the fun. Staff were accommodating, friendly and very
+                helpful. Café on site for refreshments etc. Will keep children enterntained during the holidays. Worth a
+                visit if you haven’t been.</p>
+
+            <img id="qoute2" src="./file/quote-right.svg" alt="" srcset="">
+        </div>
+        <div id="page4">
+            <h1>WHAT ARE YOU WAITING FOR?</h1>
+            <div class="item">
+                <h2>toptracer range</h2>
+                <img src="./file/page-toptracer-1024x683.avif" alt="">
+            </div>
+            <div class="item">
+                <h2>golf lessons</h2>
+                <img src="./file/page-lessons-1024x683.avif" alt="">
+            </div>
+            <div class="item">
+                <h2>adventure golf</h2>
+                <img src="./file/page-ag-1024x682.avif" alt="">
+            </div>
+        </div>
+        <div id="footer">
+            <img
+              src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-footer.svg"
+              alt=""
+            />
+            <div id="f1">
+              <img
+                src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/logo-white.svg"
+                alt=""
+              />
+            </div>
+            <div id="f2">
+              <h3>TOPTRACER Ranges</h3>
+              <h3>Golf Lessons</h3>
+              <h3>Adventure Golf</h3>
+            </div>
+            <div id="f3">
+              <h3>coffee shop</h3>
+              <h3>LEAGUES</h3>
+              <h3>Contact us</h3>
+            </div>
+            <div id="f4">
+              <h4>
+                A20, SIDCUP BYPASS <br />
+                CHISLEHURST <br />
+                KENT <br />
+                BR7 6RP <br />
+                TEL: 0208 309 0181 <br />
+                GET DIRECTIONS <br />
+              </h4>
+            </div>
     </div>
     <!-- GSAP START  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- GSAP END -->
     <script src="main.js"></script>
-    
+
 </body>
 
 </html>
